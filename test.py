@@ -4,14 +4,12 @@
 # # Load your API key from an environment variable or secret management service
 # openai.api_key = os.getenv("OPENAI_API_KEY")
 
-
+import os
 import openai
 
-# Set your OpenAI API key
-api_key = "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"
+# Load your API key from an environment variable or secret management service
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# Initialize the OpenAI API client
-openai.api_key = api_key
 
 # Call the `davinci` engine to generate embeddings
 response = openai.Embedding.create(
