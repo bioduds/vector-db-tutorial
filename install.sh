@@ -8,3 +8,4 @@ pip install huggingface_hub
 pip install tiktoken
 pip install InstructorEmbedding
 pip install sentence_transformers
+pip install qdrant_client
